@@ -11,10 +11,11 @@ RUN npm install --silent
 RUN npm install react-scripts@3.0.1 -g --silent
 RUN npm run build
 
-#prepare nginx
-FROM nginx:1.16.0-alpine
+# Stage 1 - Serve Frontend Assets
+FROM fholzer/nginx-brotli:v1.12.2
+WORKDIR /etc/nginx
+ADD nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /app/build /usr/share/nginx/html
-COPY nginx/nginx.conf /etc/nginx/conf.d
 
 #fire up nginx
 EXPOSE 80
