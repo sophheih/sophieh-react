@@ -1,3 +1,33 @@
+# Getting Started
+
+Clone the project:
+
+    git clone https://github.com/sophheih/sophieh-react.git
+    
+Navigate into the directory:
+
+    cd sophieh-react
+    
+Install node modules:
+
+    npm install
+    
+Run the app locally:
+
+    npm start
+    
+Build the docker image:
+
+    docker build -t myapp
+    
+Run the docker image:
+
+    docker run -p 8080:80 myapp
+    
+Navigate to the url in your browser:
+
+    http://localhost:8080
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
