@@ -1,4 +1,4 @@
-import logo from './pei.JPG';
+import logo from './benson.jpg';
 import './App.css';
 
 function App() {
@@ -6,12 +6,18 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img style={Image} src={logo} className="App-logo" alt="logo" />
-        <h1 style={Text}>
+        {/* <h1 style={Text}>
           U are watching a spining PEI CHEN HSIEH, so
         </h1>
         <h1 style={Text2}>
           Wish U a nice day! :)
+        </h1> */}
+        <h1 style={Text}>
+          Hello Benson!
         </h1>
+        <h1 style={Text2}>
+          I am a chicken
+        </h1> 
 
       </header>
     </div>
